@@ -10,12 +10,12 @@ import Footer from "../components/Footer";
 
 import { projectsData } from "../lib/projects-data";
 import { lang, tech } from "../lib/lang-data";
-import { Language, ProjectsData, TechData } from "../components/types";
+import { Language, ProjectsData } from "../components/types";
 
 type IProps = {
   projectsData: ProjectsData[];
   lang: Language[];
-  techData: TechData[];
+  techData: Language[];
 };
 
 export default function Home({ projectsData }: IProps) {

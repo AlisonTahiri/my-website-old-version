@@ -1,10 +1,10 @@
 import Image from "next/image";
 import LangCase from "./LangCase";
-import { Language, TechData } from "./types";
+import { Language } from "./types";
 
 type IProps = {
   langData: Language[];
-  techData: TechData[];
+  techData: Language[];
 };
 
 const Personal: React.FC<IProps> = ({ langData, techData }) => {

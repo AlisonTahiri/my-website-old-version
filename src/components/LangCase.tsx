@@ -33,7 +33,7 @@ const LangCase: React.FC<IProps> = ({
       <h1 className="mb-4 text-lg md:text-2xl text-primary">{title}</h1>
       <div className="flex flex-col flex-wrap lg:flex-row md:justify-between lg:justify-start">
         {lang.map((lang) => {
-          const { id, src, alt, stars } = lang;
+          const { id, src, alt, name, stars } = lang;
           return (
             <div key={alt} className="flex items-center mb-3 mr-3 lg:mr-6 ">
               <div key={id} className="w-10 h-10 mr-2 sm:mr-0 ">
@@ -47,7 +47,7 @@ const LangCase: React.FC<IProps> = ({
                 />
               </div>
               <div className="ml-2 capitalize text-text">
-                <p>{alt}</p>
+                <p>{name}</p>
                 <span className="flex">{renderStars(stars)}</span>
               </div>
             </div>
