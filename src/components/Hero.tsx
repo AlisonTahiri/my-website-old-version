@@ -1,6 +1,6 @@
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import { i18nTextHeroHi } from "../messages/i18nMessages";
+import { i18nTextHeroHi, i18nTextHeroWelcome } from "../messages/i18nMessages";
 
 const Hero = () => {
   const { t } = useTranslation("hero");
@@ -33,7 +33,7 @@ const Hero = () => {
             data-aos-delay="100"
             className="hidden text-3xl font-semibold text-center text-primary lg:text-7xl md:text-5xl md:block"
           >
-            Welcome to my website!
+            {t(i18nTextHeroWelcome)}
           </h2>
         </div>
         <div data-aos="zoom-in" className="w-60 md:w-80 lg:w-6/12 xl:-mt-16">
@@ -53,7 +53,7 @@ const Hero = () => {
           data-aos-offset="-200"
           className="text-3xl font-semibold text-center text-primary lg:text-7xl md:text-5xl md:hidden"
         >
-          Welcome to my website!
+          {t(i18nTextHeroWelcome)}
         </h2>
       </div>
 

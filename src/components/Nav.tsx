@@ -9,10 +9,10 @@ import Link from "next/link";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
   const { theme, setTheme } = useTheme();
 
   const router = useRouter();
+  const [language, setLanguage] = useState(router.locale);
 
   const handleClick = () => {
     router.push("/");
