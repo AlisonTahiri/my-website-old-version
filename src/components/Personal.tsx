@@ -1,4 +1,14 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import {
+  i18nTextPersonalLink,
+  i18nTextPersonalParagraph1,
+  i18nTextPersonalParagraph2,
+  i18nTextPersonalParagraph3,
+  i18nTextPersonalParagraph4,
+  i18nTextPersonalParagraph5,
+  i18nTextPersonalTitle,
+} from "../messages/i18nMessages";
 import LangCase from "./LangCase";
 import { Language } from "./types";
 
@@ -8,6 +18,7 @@ type IProps = {
 };
 
 const Personal: React.FC<IProps> = ({ langData, techData }) => {
+  const { t } = useTranslation("personal");
   return (
     <section
       id="personal"
@@ -31,35 +42,23 @@ const Personal: React.FC<IProps> = ({ langData, techData }) => {
         >
           <div>
             <h2 className="mb-6 text-3xl font-bold text-primary">
-              Personal Information
+              {t(i18nTextPersonalTitle)}
             </h2>
-            <p className="mb-4">
-              Hi, I&apos;m Alison. I&apos;m a Frontend Developer from Tirana,
-              currently working as a freelancer.
-            </p>
-            <p className="mb-4">
-              I&#39;ve studied Business Management at SUNY (Empire State
-              College). I have always been attracted from computers and
-              technology and ultimately decided to switch my career during the
-              Covid-19 pandemic.
-            </p>
-            <p className="mb-4">
-              My path in web dev started with an online course from Codecademy,
-              the “Web Development Path”. After that, I continued to develop my
-              skills by learning from many other online resources such as
-              youtube channels, dev blogs, Stack Overflow etc.
-            </p>
+            <p className="mb-4">{t(i18nTextPersonalParagraph1)}</p>
+            <p className="mb-4">{t(i18nTextPersonalParagraph2)}</p>
+            <p className="mb-4">{t(i18nTextPersonalParagraph3)}</p>
             <p>
-              For more info about my skills, you can have a look at my CV{" "}
+              {t(i18nTextPersonalParagraph4)}
               <a
                 className="underline transition-colors duration-300 hover:text-primary"
-                href="/AlisonTahiriCV.pdf"
+                href="/alison-tahiri-resume.pdf"
                 target="_blank"
                 rel="noopener"
               >
-                here
+                {" "}
+                {t(i18nTextPersonalLink)}{" "}
               </a>
-              or just keep scrolling below to some of my projects.
+              {t(i18nTextPersonalParagraph5)}
             </p>
           </div>
         </div>
