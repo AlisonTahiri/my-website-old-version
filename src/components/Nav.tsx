@@ -6,10 +6,12 @@ import { navLinks } from "../lib/data";
 import ToggleDarkBtn from "./ToggleDarkBtn";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation("nav");
 
   const router = useRouter();
   const [language, setLanguage] = useState(router.locale);
@@ -75,7 +77,7 @@ const Nav = () => {
                 key={name}
                 className="cursor-pointer link-underline"
               >
-                {name}
+                {t(name)}
               </LinkS>
             );
           })}
@@ -134,7 +136,7 @@ const Nav = () => {
               key={name}
               className="m-2 cursor-pointer link-underline"
             >
-              {name}
+              {t(name)}
             </LinkS>
           );
         })}
