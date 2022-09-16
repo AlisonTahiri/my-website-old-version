@@ -79,15 +79,9 @@ export const lang = [
     name: "Italian",
     stars: 4,
   },
+
   {
     id: 4,
-    src: "/images/lang/ger.png",
-    alt: "German",
-    name: "German",
-    stars: 3,
-  },
-  {
-    id: 5,
     src: "/images/lang/turkish.png",
     alt: "Turkish",
     name: "Turkish",
