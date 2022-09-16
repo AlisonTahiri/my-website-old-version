@@ -3,6 +3,6 @@ module.exports = {
   defaultLocale: "en", // Default language of your website
   pages: {
     "*": ["common"], // Namespaces that you want to import per page (we stick to one namespace for all the application in this tutorial)
-    "/": ["hero", "nav", "personal", "contact"],
+    "/": ["hero", "nav", "personal", "contact", "projects"],
   },
 };

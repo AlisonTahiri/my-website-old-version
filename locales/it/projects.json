@@ -1,0 +1,7 @@
+{
+  "i18n-text-projects-title": "Alcuni dei miei lavori",
+  "i18n-text-projects-descr-dardha": "Questo è un sito Web di mockup che ho creato per una startup. È fondamentalmente un'app per l'acquisto di generi alimentari in movimento.",
+  "i18n-text-projects-descr-recipe-finder": "App semplice e pratica per trovare una ricetta di cucina in pochi secondi. Ho usato edamam api che ha più di 2 milioni di ricette disponibili.",
+  "i18n-text-projects-desc-simple-task": "Questa è una semplice app Web in cui gli utenti possono accedere e archiviare attività. I suoi dati sono archiviati in un database in modo da poter accedere alle attività da qualsiasi dispositivo.",
+  "i18n-text-projects-notes-app": "Archivia le note in movimento. Realizzato utilizzando redux thunk."
+}

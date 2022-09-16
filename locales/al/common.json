@@ -18,5 +18,10 @@
   "i18n-text-personal-link": "këtu",
   "i18n-text-personal-paragraph5": "ose thjesht vazhdoni të lëvizni më poshtë te disa nga projektet e mia.",
   "i18n-text-personal-tech": "Teknologji që përdor",
-  "i18n-text-personal-languages": "Gjuhë që njoh "
+  "i18n-text-personal-languages": "Gjuhë që njoh ",
+  "i18n-text-projects-title": "Disa nga punët e mia",
+  "i18n-text-projects-descr-dardha": "Kjo është një faqe interneti model që kam krijuar për një startup. Në thelb është një aplikacion për blerjen e sendeve ushqimore online",
+  "i18n-text-projects-descr-recipe-finder": "Aplikacion i thjeshtë dhe praktik për të gjetur një recetë gatimi brenda sekondave. Kam përdorur edamam api i cili ka më shumë se 2 milion receta në dispozicion.",
+  "i18n-text-projects-desc-simple-task": "Ky është një aplikacion i thjeshtë ueb ku përdoruesit mund të identifikohen dhe të ruajnë detyrat. Të dhënat e tyre ruhen në një bazë të dhënash në mënyrë që detyrat të mund të aksesohen nga çdo pajisje.",
+  "i18n-text-projects-notes-app": "Ruani shënimet në lëvizje. Bërë duke përdorur redux thunks."
 }
