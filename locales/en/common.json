@@ -10,5 +10,7 @@
   "i18n-text-personal-paragraph3": "My path in web dev started with an online course from Codecademy, the “Web Development Path”. After that, I continued to develop my skills by learning from many other online resources such as youtube channels, dev blogs, Stack Overflow etc.",
   "i18n-text-personal-paragraph4": "For more info about my skills, you can have a look at my CV ",
   "i18n-text-personal-link": "here",
-  "i18n-text-personal-paragraph5": "or just keep scrolling below to some of my projects."
+  "i18n-text-personal-paragraph5": "or just keep scrolling below to some of my projects.",
+  "i18n-text-personal-tech": "Tech I use",
+  "i18n-text-personal-languages": "Languages I know"
 }

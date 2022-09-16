@@ -2,8 +2,10 @@
   "i18n-text-personal-title": "Rreth meje",
   "i18n-text-personal-paragraph1": "Përshëndetje, unë jam Alison. Unë jam një zhvillues Frontend nga Tirana.        Aktualisht punoj si freelancer.",
   "i18n-text-personal-paragraph2": "Unë kam studiuar Menaxhim Biznesi në SUNY (Empire State College). Kam qenë gjithmonë i tërhequr nga kompjuterët dhe teknologjia dhe përfundimisht kam vendosur të ndryshoj karrierën time gjatë pandemisë Covid-19.",
-  "i18n-text-personal-paragraph3": "Rruga ime në ueb dev filloi me një kurs në internet nga Codecademy, “Web Development Path”. Pas kësaj, vazhdova të zhvilloj aftësitë e mia duke mësuar nga shumë burime të tjera në internet si kanalet në youtube, blogjet e devijimit, Stack Overflow etj.",
+  "i18n-text-personal-paragraph3": "Rruga ime në ueb dev filloi me një kurs në internet nga Codecademy, “Web Development Path”. Pas kësaj, vazhdova të zhvilloj aftësitë e mia duke mësuar nga shumë burime të tjera në internet si kanalet në youtube, blogje zhvillimi, Stack Overflow etj.",
   "i18n-text-personal-paragraph4": "Për më shumë informacion rreth aftësive të mia, mund të shikoni CV-në time ",
   "i18n-text-personal-link": "këtu",
-  "i18n-text-personal-paragraph5": "ose thjesht vazhdoni të lëvizni më poshtë te disa nga projektet e mia."
+  "i18n-text-personal-paragraph5": "ose thjesht vazhdoni të lëvizni më poshtë te disa nga projektet e mia.",
+  "i18n-text-personal-tech": "Teknologji që përdor",
+  "i18n-text-personal-languages": "Gjuhë që njoh "
 }

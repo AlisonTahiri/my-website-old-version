@@ -121,4 +121,38 @@ module.exports = [
       },
     ],
   },
+  {
+    code: "i18n-text-personal-tech",
+    tr: [
+      {
+        l: "en",
+        v: "Tech I use",
+      },
+      {
+        l: "al",
+        v: "Teknologji që përdor",
+      },
+      {
+        l: "it",
+        v: "Tecnologia che uso",
+      },
+    ],
+  },
+  {
+    code: "i18n-text-personal-languages",
+    tr: [
+      {
+        l: "en",
+        v: "Languages I know",
+      },
+      {
+        l: "al",
+        v: "Gjuhë që njoh ",
+      },
+      {
+        l: "it",
+        v: "Lingue che conosco",
+      },
+    ],
+  },
 ];

@@ -10,3 +10,5 @@ export const i18nTextPersonalParagraph3 = 'i18n-text-personal-paragraph3';
 export const i18nTextPersonalParagraph4 = 'i18n-text-personal-paragraph4'; 
 export const i18nTextPersonalLink = 'i18n-text-personal-link'; 
 export const i18nTextPersonalParagraph5 = 'i18n-text-personal-paragraph5'; 
+export const i18nTextPersonalTech = 'i18n-text-personal-tech'; 
+export const i18nTextPersonalLanguages = 'i18n-text-personal-languages'; 

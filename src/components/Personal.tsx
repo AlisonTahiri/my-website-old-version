@@ -1,12 +1,14 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import {
+  i18nTextPersonalLanguages,
   i18nTextPersonalLink,
   i18nTextPersonalParagraph1,
   i18nTextPersonalParagraph2,
   i18nTextPersonalParagraph3,
   i18nTextPersonalParagraph4,
   i18nTextPersonalParagraph5,
+  i18nTextPersonalTech,
   i18nTextPersonalTitle,
 } from "../messages/i18nMessages";
 import LangCase from "./LangCase";
@@ -65,12 +67,12 @@ const Personal: React.FC<IProps> = ({ langData, techData }) => {
       </div>
       <div className="container flex justify-around mx-auto lg:justify-between ">
         <LangCase
-          title="Tech I use:"
+          title={t(i18nTextPersonalTech)}
           lang={techData}
           aosDirection="flip-down"
         />
         <LangCase
-          title="Languages I know:"
+          title={t(i18nTextPersonalLanguages)}
           lang={langData}
           aosDelay={150}
           aosDirection="flip-down"
