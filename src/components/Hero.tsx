@@ -2,7 +2,7 @@ import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
 const Hero = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("hero");
   return (
     <section
       id="hero"
