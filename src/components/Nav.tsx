@@ -5,9 +5,11 @@ import { useTheme } from "next-themes";
 import { navLinks } from "../lib/data";
 import ToggleDarkBtn from "./ToggleDarkBtn";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [language, setLanguage] = useState("en");
   const { theme, setTheme } = useTheme();
 
   const router = useRouter();
@@ -20,17 +22,46 @@ const Nav = () => {
   return (
     <div className="fixed z-10 w-full">
       <nav className="flex z-20 absolute items-center justify-between w-full h-16 px-6 bg-customlight dark:bg-darkgray">
-        {/* Logo */}
-        <button
-          onClick={handleClick}
-          className="text-2xl transition-all duration-300 lg:link-underline text-text hover:text-primary"
-        >
-          Alison Tahiri
-        </button>
-        <ToggleDarkBtn
-          theme={theme}
-          setTheme={(theme: string) => setTheme(theme)}
-        />
+        <div className="flex space-x-1">
+          {/* Logo */}
+          <button
+            onClick={handleClick}
+            className="text-2xl transition-all duration-300 lg:link-underline text-text hover:text-primary"
+          >
+            Alison Tahiri
+          </button>
+
+          <select
+            value={language}
+            className="text-2xl bg-transparent"
+            onChange={(e) => setLanguage(e.target.value)}
+          >
+            <Link href="/" locale="en">
+              <option className="text-2xl bg-transparent" value="en">
+                &#127482;&#127480;
+              </option>
+            </Link>
+            <Link href="/" locale="al">
+              <option className="text-2xl" value="al">
+                &#127462;&#127473;
+              </option>
+            </Link>
+            <Link href="/" locale="it">
+              <option className="text-2xl" value="al">
+                &#127470;&#127481;
+              </option>
+            </Link>
+            {/* <Link href="/" locale="tr">
+              <option className="text-2xl" value="al">
+                &#127481;&#127479;
+              </option>
+            </Link> */}
+          </select>
+          <ToggleDarkBtn
+            theme={theme}
+            setTheme={(theme: string) => setTheme(theme)}
+          />
+        </div>
         {/* Links screen > 768px */}
         <div className="hidden space-x-3 text-xl md:flex text-text">
           {navLinks.map((link) => {

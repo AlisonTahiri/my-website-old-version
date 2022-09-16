@@ -1,6 +1,8 @@
 import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
 
 const Hero = () => {
+  const { t } = useTranslation("common");
   return (
     <section
       id="hero"
@@ -23,7 +25,7 @@ const Hero = () => {
             data-aos-delay="100"
             className="mb-6 text-3xl font-semibold text-center text-text lg:text-7xl md:text-5xl"
           >
-            Hi! I&apos;m Alison.
+            {t("greeting")}
           </h1>
           <h2
             data-aos="zoom-out"
