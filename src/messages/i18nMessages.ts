@@ -1,3 +1,9 @@
+export const i18nTextContactDropMessage = 'i18n-text-contact-drop-message'; 
+export const i18nTextContactEmail = 'i18n-text-contact-email'; 
+export const i18nTextContactMessage = 'i18n-text-contact-message'; 
+export const i18nTextContactSubmit = 'i18n-text-contact-submit'; 
+export const i18nTextContactError = 'i18n-text-contact-error'; 
+export const i18nTextContactSuccess = 'i18n-text-contact-success'; 
 export const i18nTextHeroHi = 'i18n-text-hero-hi'; 
 export const i18nTextHeroWelcome = 'i18n-text-hero-welcome'; 
 export const i18nTextNavPersonal = 'i18n-text-nav-personal'; 

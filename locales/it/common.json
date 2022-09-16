@@ -1,4 +1,10 @@
 {
+  "i18n-text-contact-drop-message": "Mandami un messaggio",
+  "i18n-text-contact-email": "Il vostro email",
+  "i18n-text-contact-message": "Il vostro messagio",
+  "i18n-text-contact-submit": "Invia",
+  "i18n-text-contact-error": "Ops! C'era un errore. Riprova più tardi.",
+  "i18n-text-contact-success": "Ho ricevuto il tuo messaggio. Ti risponderò al più presto possibile.",
   "i18n-text-hero-hi": "Ciao! Io sono Alison!",
   "i18n-text-hero-welcome": "Benvenuti nel mio sito web!",
   "i18n-text-nav-personal": "Personale",

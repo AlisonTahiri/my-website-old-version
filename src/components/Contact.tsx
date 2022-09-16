@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
+import {
+  i18nTextContactDropMessage,
+  i18nTextContactEmail,
+  i18nTextContactError,
+  i18nTextContactMessage,
+  i18nTextContactSubmit,
+  i18nTextContactSuccess,
+} from "../messages/i18nMessages";
 
 const Contact = () => {
   const [formResult, setFormResult] = useState("");
+  const { t } = useTranslation("contact");
 
   const submitForm = (ev: React.FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
@@ -41,7 +51,7 @@ const Contact = () => {
           className="flex flex-col justify-center p-6"
         >
           <h2 className="mb-6 text-2xl font-bold text-primary">
-            Drop me a message
+            {t(i18nTextContactDropMessage)}
           </h2>
           <form
             onSubmit={(e) => submitForm(e)}
@@ -50,7 +60,7 @@ const Contact = () => {
           >
             <div className="flex flex-col mb-4">
               <label className="mb-3" htmlFor="email">
-                Your e-mail
+                {t(i18nTextContactEmail)}
               </label>
               <input
                 className="px-4 py-2 bg-white border-2 rounded-md outline-none border-primary text-primary focus:border-4 focus:border-double"
@@ -63,7 +73,7 @@ const Contact = () => {
             </div>
             <div className="flex flex-col">
               <label className="my-2" htmlFor="message">
-                Your message
+                {t(i18nTextContactMessage)}
               </label>
               <textarea
                 className="px-4 py-2 bg-white border-2 rounded-md outline-none border-primary text-primary focus:border-4 focus:border-double"
@@ -79,17 +89,13 @@ const Contact = () => {
               className="px-8 py-4 mt-4 text-white rounded-md bg-primary hover:bg-hv"
               type="submit"
             >
-              Submit
+              {t(i18nTextContactSubmit)}
             </button>
             {formResult === "error" && (
-              <p className="error">
-                Ooops! There was an error. Try again later.
-              </p>
+              <p className="error">{t(i18nTextContactError)}</p>
             )}
             {formResult === "ok" && (
-              <p className="success">
-                I received your message. I&apos;ll get back to you ASAP.
-              </p>
+              <p className="success">{t(i18nTextContactSuccess)}</p>
             )}
           </form>
         </div>
