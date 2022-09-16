@@ -1,6 +1,6 @@
 module.exports = [
   {
-    code: "i18n.text.hero.hi",
+    code: "i18n-text-hero-hi",
     tr: [
       {
         l: "en",

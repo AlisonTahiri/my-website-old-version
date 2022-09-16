@@ -26,7 +26,7 @@ const Hero = () => {
             data-aos-delay="100"
             className="mb-6 text-3xl font-semibold text-center text-text lg:text-7xl md:text-5xl"
           >
-            {t(`hero:${i18nTextHeroHi}`)}
+            {t(i18nTextHeroHi)}
           </h1>
           <h2
             data-aos="zoom-out"

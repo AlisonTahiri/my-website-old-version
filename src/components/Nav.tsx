@@ -47,7 +47,7 @@ const Nav = () => {
               </option>
             </Link>
             <Link href="/" locale="it">
-              <option className="text-2xl" value="al">
+              <option className="text-2xl" value="it">
                 &#127470;&#127481;
               </option>
             </Link>

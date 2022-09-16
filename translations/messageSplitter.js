@@ -55,7 +55,7 @@ const getMessages = (messages) => {
     return;
   } else {
     const msgCodesArray = messages.map((obj) => {
-      const title = obj.code.split(".");
+      const title = obj.code.split("-");
       const firstElement = title[0];
       const sliced = title
         .slice(1)
@@ -84,7 +84,7 @@ const splitJsonByKeyword = (array, translation, destinationPath) => {
   const objectEntries = Object.entries(translation);
   array.forEach((string) => {
     const filtered = objectEntries.filter((entry) =>
-      entry[0].includes(`text.${string}`)
+      entry[0].includes(`text-${string}`)
     );
 
     const obj = Object.fromEntries(filtered);
