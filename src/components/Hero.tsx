@@ -1,5 +1,6 @@
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import { i18nTextHeroHi } from "../messages/i18nMessages";
 
 const Hero = () => {
   const { t } = useTranslation("hero");
@@ -25,7 +26,7 @@ const Hero = () => {
             data-aos-delay="100"
             className="mb-6 text-3xl font-semibold text-center text-text lg:text-7xl md:text-5xl"
           >
-            {t("greeting")}
+            {t(`hero:${i18nTextHeroHi}`)}
           </h1>
           <h2
             data-aos="zoom-out"

@@ -22,8 +22,22 @@ const getEnglishTranslation = (messages) => {
 };
 
 const getItalianTranslation = (messages) => {
-  if (messages.some((msg) => !msg.code || !msg.tr[0] || !msg.tr[0].v)) {
+  if (messages.some((msg) => !msg.code || !msg.tr[2] || !msg.tr[2].v)) {
     console.log("Please add correct italian translation format!");
+    return;
+  } else {
+    const formattedMessages = messages.map((msg) => {
+      const msgCode = msg.code.toString();
+      const translation = msg.tr[2].v;
+      return [msgCode, translation];
+    });
+    return Object.fromEntries(formattedMessages);
+  }
+};
+
+const getAlbanianTranslation = (messages) => {
+  if (messages.some((msg) => !msg.code || !msg.tr[1] || !msg.tr[1].v)) {
+    console.log("Please add correct albanian translation format!");
     return;
   } else {
     const formattedMessages = messages.map((msg) => {
@@ -116,12 +130,20 @@ const createJsonTranslationCommon = (array, translation, destinationPath) => {
 
 const englishTranslation = getEnglishTranslation(langFilesArray);
 const italianTranslation = getItalianTranslation(langFilesArray);
+const albanianTranslation = getAlbanianTranslation(langFilesArray);
 
 const enDestinationPath = "../locales/en";
 const itDestinationPath = "../locales/it";
+const alDestinationPath = "../locales/al";
 
 splitJsonByKeyword(jsFileNames, englishTranslation, enDestinationPath);
 splitJsonByKeyword(jsFileNames, italianTranslation, itDestinationPath);
+splitJsonByKeyword(jsFileNames, albanianTranslation, alDestinationPath);
 createJsonTranslationCommon(jsFileNames, italianTranslation, itDestinationPath);
 createJsonTranslationCommon(jsFileNames, englishTranslation, enDestinationPath);
+createJsonTranslationCommon(
+  jsFileNames,
+  albanianTranslation,
+  alDestinationPath
+);
 getMessages(langFilesArray);

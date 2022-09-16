@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "split-messages": "node createMessageIndexer.js && node messageSplitter.js"
+    "split-messages": "cd translations && node createMessageIndexer.js && node messageSplitter.js"
   },
   "dependencies": {
     "aos": "^2.3.4",

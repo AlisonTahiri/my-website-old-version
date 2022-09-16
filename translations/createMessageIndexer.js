@@ -6,11 +6,17 @@ const jsFileNames = fs
 
 const enFilePath = "../locales/en";
 const itFilePath = "../locales/it";
+const alFilePath = "../locales/al";
 
 const enJsonFileNames = fs
   .readdirSync(enFilePath)
   .map((file) => file.slice(0, -5));
+
 const itJsonFileNames = fs
+  .readdirSync(itFilePath)
+  .map((file) => file.slice(0, -5));
+
+const alJsonFileNames = fs
   .readdirSync(itFilePath)
   .map((file) => file.slice(0, -5));
 
@@ -55,3 +61,4 @@ const cleanUnusedTranslationFiles = (jsonFileNames, jsonFilePath) => {
 createMessagesIndexer(jsFileNames);
 cleanUnusedTranslationFiles(itJsonFileNames, itFilePath);
 cleanUnusedTranslationFiles(enJsonFileNames, enFilePath);
+cleanUnusedTranslationFiles(alJsonFileNames, alFilePath);
