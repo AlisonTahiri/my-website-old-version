@@ -8,7 +8,7 @@ module.exports = [
       },
       {
         l: "al",
-        v: "Ç'kemi! Unë jam Alison!",
+        v: "Përshëndetje!",
       },
       {
         l: "it",
