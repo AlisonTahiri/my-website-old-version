@@ -16,9 +16,16 @@ const Nav = () => {
   const router = useRouter();
   const [language, setLanguage] = useState(router.locale);
 
-  const handleClick = () => {
+  const handleNameClick = () => {
     router.push("/");
     setOpen(false);
+  };
+
+  const currentPath = router.route;
+
+  const handleLangChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setLanguage(e.target.value);
+    router.push(currentPath, currentPath, { locale: e.target.value });
   };
 
   return (
@@ -27,7 +34,7 @@ const Nav = () => {
         <div className="flex space-x-1">
           {/* Logo */}
           <button
-            onClick={handleClick}
+            onClick={handleNameClick}
             className="text-2xl transition-all duration-300 lg:link-underline text-text hover:text-primary"
           >
             Alison Tahiri
@@ -36,23 +43,17 @@ const Nav = () => {
           <select
             value={language}
             className="text-2xl bg-transparent"
-            onChange={(e) => setLanguage(e.target.value)}
+            onChange={(e) => handleLangChange(e)}
           >
-            <Link href="/" locale="en">
-              <option className="text-2xl bg-transparent" value="en">
-                &#127482;&#127480;
-              </option>
-            </Link>
-            <Link href="/" locale="al">
-              <option className="text-2xl" value="al">
-                &#127462;&#127473;
-              </option>
-            </Link>
-            <Link href="/" locale="it">
-              <option className="text-2xl" value="it">
-                &#127470;&#127481;
-              </option>
-            </Link>
+            <option className="text-2xl bg-transparent" value="en">
+              &#127482;&#127480;
+            </option>
+            <option className="text-2xl" value="al">
+              &#127462;&#127473;
+            </option>
+            <option className="text-2xl" value="it">
+              &#127470;&#127481;
+            </option>
             {/* <Link href="/" locale="tr">
               <option className="text-2xl" value="al">
                 &#127481;&#127479;
