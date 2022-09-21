@@ -82,6 +82,7 @@ const Nav = () => {
               </LinkS>
             );
           })}
+          <Link href="blog">Blog</Link>
           <a
             href="/alison-tahiri-resume.pdf"
             target="_blank"
@@ -141,6 +142,7 @@ const Nav = () => {
             </LinkS>
           );
         })}
+        <Link href="blog">Blog</Link>
         <a
           href="/alison-tahiri-resume.pdf"
           target="_blank"
