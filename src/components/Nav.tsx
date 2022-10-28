@@ -71,6 +71,7 @@ const Nav = () => {
             const { name, href, offset } = link;
             return (
               <LinkS
+                absolute
                 to={href}
                 offset={offset}
                 spy={true}

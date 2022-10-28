@@ -1,3 +1,5 @@
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Layout from "../../../components/Layout";
@@ -5,11 +7,11 @@ import { Article } from "../../../components/types";
 import { fetchAPI } from "../../../lib/strapiApi";
 import { getStrapiMedia } from "../../../lib/strapiMedia";
 
-const Article = ({ article }: { article: Article }) => {
-  const { author, title, content, image, createdAt } = article.attributes;
+const Article = ({ article, source }: { article: Article; source: any }) => {
+  const { author, title, image, createdAt } = article.attributes;
   const imageUrl = getStrapiMedia(image);
   const authorUrl = getStrapiMedia(author.data.attributes.picture);
-
+  console.log(source);
   return (
     <Layout>
       <div className="flex flex-col items-center pt-4">
@@ -22,7 +24,7 @@ const Article = ({ article }: { article: Article }) => {
             height={image.data.attributes.formats.medium.height}
             alt={image.data.attributes.formats.medium.caption}
           />
-          <p className="max-w-4xl mt-4 text-lg ">{content}</p>
+          <MDXRemote {...source} />
           <Image
             src={authorUrl}
             alt={
@@ -69,10 +71,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   });
   const categoriesRes = await fetchAPI("/categories");
 
+  const source = await articlesRes.data[0].attributes.content;
+  const mdxSource = await serialize(source);
+
   return {
     props: {
       article: articlesRes.data[0],
       categories: categoriesRes,
+      source: mdxSource,
     },
     revalidate: 1,
   };
