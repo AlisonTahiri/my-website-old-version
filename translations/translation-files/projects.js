@@ -84,4 +84,39 @@ module.exports = [
       },
     ],
   },
+
+  {
+    code: "i18n-text-projects-message",
+    tr: [
+      {
+        l: "en",
+        v: "Sorry but I removed all the projects listed in here. They were very old and not upgraded. I will populate this soon with some interesting stuff. Do not hesitate to contact me in the form below or in the phone number provided in my ",
+      },
+      {
+        l: "al",
+        v: "Më  vjen keq, por i hoqa të gjitha projektet e listuara këtu. Ata ishin shumë të vjetër dhe jo të update-uar. Së shpejti do të vendos disa gjëra interesante. Mos hezitoni të më kontaktoni në formularin e mëposhtëm ose në numrin e telefonit të vendosur në ",
+      },
+      {
+        l: "it",
+        v: "Sono spiacente ma ho rimosso tutti i progetti elencati qui. Erano molto vecchi e non aggiornati. Lo popolerò presto con alcune cose interessanti. Non esitate a contattarmi nel modulo sottostante o al numero di telefono fornito nel mio ",
+      },
+    ],
+  },
+  {
+    code: "i18n-text-projects-cv",
+    tr: [
+      {
+        l: "en",
+        v: "CV",
+      },
+      {
+        l: "al",
+        v: "CV",
+      },
+      {
+        l: "it",
+        v: "CV",
+      },
+    ],
+  },
 ];

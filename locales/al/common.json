@@ -23,5 +23,7 @@
   "i18n-text-projects-descr-dardha": "Kjo është një faqe interneti model që kam krijuar për një startup. Në thelb është një aplikacion për blerjen e sendeve ushqimore online",
   "i18n-text-projects-descr-recipe-finder": "Aplikacion i thjeshtë dhe praktik për të gjetur një recetë gatimi brenda sekondave. Kam përdorur edamam api i cili ka më shumë se 2 milion receta në dispozicion.",
   "i18n-text-projects-desc-simple-task": "Ky është një aplikacion i thjeshtë ueb ku përdoruesit mund të identifikohen dhe të ruajnë detyrat. Të dhënat e tyre ruhen në një bazë të dhënash në mënyrë që detyrat të mund të aksesohen nga çdo pajisje.",
-  "i18n-text-projects-notes-app": "Ruani shënimet në lëvizje. Bërë duke përdorur redux thunks."
+  "i18n-text-projects-notes-app": "Ruani shënimet në lëvizje. Bërë duke përdorur redux thunks.",
+  "i18n-text-projects-message": "Më  vjen keq, por i hoqa të gjitha projektet e listuara këtu. Ata ishin shumë të vjetër dhe jo të update-uar. Së shpejti do të vendos disa gjëra interesante. Mos hezitoni të më kontaktoni në formularin e mëposhtëm ose në numrin e telefonit të vendosur në ",
+  "i18n-text-projects-cv": "CV"
 }

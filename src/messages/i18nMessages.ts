@@ -23,3 +23,5 @@ export const i18nTextProjectsDescrDardha = 'i18n-text-projects-descr-dardha';
 export const i18nTextProjectsDescrRecipeFinder = 'i18n-text-projects-descr-recipe-finder'; 
 export const i18nTextProjectsDescSimpleTask = 'i18n-text-projects-desc-simple-task'; 
 export const i18nTextProjectsNotesApp = 'i18n-text-projects-notes-app'; 
+export const i18nTextProjectsMessage = 'i18n-text-projects-message'; 
+export const i18nTextProjectsCv = 'i18n-text-projects-cv'; 

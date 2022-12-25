@@ -3,5 +3,7 @@
   "i18n-text-projects-descr-dardha": "This is a mockup website I created for a startup. It is basically an app for purchassing groceries on the go.",
   "i18n-text-projects-descr-recipe-finder": "Simple and practical app for finding a cooking recipe within seconds. I used edamam api which has more than 2 million recipes available.",
   "i18n-text-projects-desc-simple-task": "This is a simple web app where users can login and store tasks. It's data is stored in a database so tasks can be accessed from any device.",
-  "i18n-text-projects-notes-app": "Store notes on the go. Made using redux thunks."
+  "i18n-text-projects-notes-app": "Store notes on the go. Made using redux thunks.",
+  "i18n-text-projects-message": "Sorry but I removed all the projects listed in here. They were very old and not upgraded. I will populate this soon with some interesting stuff. Do not hesitate to contact me in the form below or in the phone number provided in my ",
+  "i18n-text-projects-cv": "CV"
 }

@@ -22,7 +22,7 @@ const SocialLinks = () => (
         target="_blank"
         rel="noopener noreferrer"
         aria-label="github"
-        href="https://github.com/Alonso121"
+        href="https://github.com/AlisonTahiri"
       >
         <AiOutlineGithub className="transition-colors duration-300 md:h-10 md:w-10 h-9 w-9 md:text-4xl text-primary hover:text-hv" />
       </a>
