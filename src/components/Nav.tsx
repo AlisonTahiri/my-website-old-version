@@ -83,7 +83,7 @@ const Nav = () => {
             );
           })}
           <a
-            href="/alison-tahiri-resume.pdf"
+            href="/alison-tahiri-cv.pdf"
             target="_blank"
             rel="noopener"
             aria-label="link to my resume"
@@ -142,7 +142,7 @@ const Nav = () => {
           );
         })}
         <a
-          href="/alison-tahiri-resume.pdf"
+          href="/alison-tahiri-cv.pdf"
           target="_blank"
           rel="noopener"
           aria-label="link to my resume"

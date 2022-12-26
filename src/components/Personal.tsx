@@ -53,7 +53,7 @@ const Personal: React.FC<IProps> = ({ langData, techData }) => {
               {t(i18nTextPersonalParagraph4)}
               <a
                 className="underline transition-colors duration-300 hover:text-primary"
-                href="/alison-tahiri-resume.pdf"
+                href="/alison-tahiri-cv.pdf"
                 target="_blank"
                 rel="noopener"
               >

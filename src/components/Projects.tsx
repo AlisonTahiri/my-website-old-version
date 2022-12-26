@@ -24,7 +24,7 @@ const Projects: React.FC<{ projectsData: ProjectsData[] }> = ({
           {t(i18nTextProjectsMessage)}{" "}
           <a
             className="underline transition-colors duration-300 hover:text-primary"
-            href="/alison-tahiri-resume.pdf"
+            href="/alison-tahiri-cv.pdf"
             target="_blank"
             rel="noopener"
           >
